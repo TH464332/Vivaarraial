@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Viva Arraial - Agência de Viagens</title>
+  <meta name="description" content="Agência de viagens especializada em Arraial d’Ajuda - viva momentos incríveis!" />
+  <style>
+    :root{
+      --azul:#0077b6;
+      --amarelo:#fdd835;
+      --verde:#2e8b57;
+      --bg:#f0f8ff;
+      --texto:#022b3a;
+    }
+    *{box-sizing:border-box;margin:0;padding:0}
+    body{font-family:'Poppins',sans-serif;background:var(--bg);color:var(--texto);line-height:1.6}
+    header{background:linear-gradient(90deg,var(--azul),var(--verde));color:white;padding:20px 0;text-align:center}
+    header h1{font-size:32px;margin-bottom:4px}
+    header p{font-size:18px;font-style:italic}
+    nav{margin-top:10px}
+    nav a{color:white;text-decoration:none;margin:0 10px;font-weight:500}
+    .container{max-width:1100px;margin:30px auto;padding:0 20px}
+    section{margin-bottom:40px}
+    h2{color:var(--azul);margin-bottom:10px}
+    .card{background:white;padding:20px;border-radius:12px;box-shadow:0 4px 10px rgba(0,0,0,0.1)}
+    .hero{text-align:center;padding:40px 20px;background:linear-gradient(135deg,var(--azul),var(--verde));color:white;border-radius:12px;margin-bottom:30px}
+    .hero h2{color:white;margin-bottom:10px}
+    .cta{display:inline-block;margin-top:15px;background:var(--amarelo);color:var(--texto);padding:12px 24px;border-radius:8px;text-decoration:none;font-weight:600;transition:0.3s}
+    .cta:hover{background:#ffe769}
+    .servicos,.pacotes{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:20px}
+    .servico,.pacote{background:white;padding:20px;border-radius:10px;text-align:center;box-shadow:0 4px 8px rgba(0,0,0,0.1)}
+    .servico h3,.pacote h3{color:var(--verde);margin-bottom:10px}
+    .servico p,.pacote p{font-size:14px}
+    footer{text-align:center;padding:20px;color:var(--texto);background:rgba(0,0,0,0.05);border-radius:12px;margin-top:40px}
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Viva Arraial</h1>
+    <p>Viva a vida, viva Arraial d’Ajuda</p>
+    <nav>
+      <a href="#sobre">Sobre</a>
+      <a href="#servicos">Serviços</a>
+      <a href="#pacotes">Pacotes</a>
+      <a href="#contato">Contato</a>
+    </nav>
+  </header>
+
+  <div class="container">
+    <section class="hero">
+      <h2>Descubra o paraíso de Arraial d’Ajuda</h2>
+      <p>Pacotes exclusivos, experiências inesquecíveis e atendimento personalizado para você aproveitar o melhor do litoral baiano.</p>
+      <a class="cta" href="https://wa.me/5573991147456" target="_blank">Fale conosco no WhatsApp</a>
+    </section>
+
+    <section id="sobre">
+      <div class="card">
+        <h2>Sobre nós</h2>
+        <p>Somos uma agência de viagens especializada em Arraial d’Ajuda, oferecendo os melhores pacotes turísticos, hospedagens, passeios e experiências únicas para quem quer viver dias incríveis no sul da Bahia.</p>
+      </div>
+    </section>
+
+    <section id="servicos">
+      <h2>Nossos serviços</h2>
+      <div class="servicos">
+        <div class="servico">
+          <h3>Hospedagem</h3>
+          <p>Os melhores hotéis, pousadas e resorts selecionados especialmente para você.</p>
+        </div>
+        <div class="servico">
+          <h3>Passeios</h3>
+          <p>Trilhas, mergulhos, tours de buggy e visitas às praias mais paradisíacas.</p>
+        </div>
+        <div class="servico">
+          <h3>Transporte</h3>
+          <p>Traslados confortáveis e seguros do aeroporto até seu destino.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="pacotes">
+      <h2>Pacotes de viagem</h2>
+      <div class="pacotes">
+        <div class="pacote">
+          <h3>Fim de semana em Arraial</h3>
+          <p>2 diárias com café da manhã e passeio pelas praias locais.</p>
+          <strong>R$ 899,00 / pessoa</strong>
+        </div>
+        <div class="pacote">
+          <h3>Romântico</h3>
+          <p>3 noites em pousada beira-mar + jantar especial e passeio de barco.</p>
+          <strong>R$ 1.499,00 / casal</strong>
+        </div>
+        <div class="pacote">
+          <h3>Aventura Bahia</h3>
+          <p>Pacote completo com trilhas, mergulho e city tour histórico.</p>
+          <strong>R$ 1.799,00 / pessoa</strong>
+        </div>
+      </div>
+    </section>
+
+    <section id="contato">
+      <div class="card" style="text-align:center">
+        <h2>Contato</h2>
+        <p>Entre em contato conosco pelo WhatsApp e planeje sua próxima viagem para o paraíso!</p>
+        <a class="cta" href="https://wa.me/5573991147456" target="_blank">Fale conosco no WhatsApp</a>
+      </div>
+    </section>
+
+    <footer>
+      © <span id="ano"></span> Viva Arraial - Todos os direitos reservados.
+    </footer>
+  </div>
+
+  <script>
+    document.getElementById('ano').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
